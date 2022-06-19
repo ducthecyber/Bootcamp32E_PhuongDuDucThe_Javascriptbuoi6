@@ -71,14 +71,12 @@ document.getElementById("btnInTheDiv").onclick = function () {
     while (soLanLap <= 10) {
         if (soLanLap % 2 == 0) {
             // div = "<div style="color:red">Div Chẵn</div>";
-            var divChan = document.getElementById("bottom").value;
-            divChan = "<div>Div Chẵn</div>";
-            ketQua = ketQua + divChan;
+            div = "<div style='background-Color:blue;color: white;' class='py-2 text-center'> Div Chẵn </div>";
+            ketQua = ketQua + div;
         }
         else {
-            var divLe = document.getElementById("top").value;
-            divLe = "<div>Div Lẻ</div>";
-            ketQua = ketQua + divLe;
+            div = "<div style='background-Color:red; color:white;' class='py-2 text-center'> Div Lẻ </div>";
+            ketQua = ketQua + div;
         }
         soLanLap++;
     }
